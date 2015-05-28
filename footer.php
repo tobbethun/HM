@@ -1,20 +1,14 @@
 <?php
 /**
- * The template for displaying the footer
+ * The footer template
  *
- * Contains footer content and the closing of the #main and #page div elements.
+ * @author Grupp Delta
+ * @package Grupp Delta H&M projekt
+ * @subpackage H&M
+ * @since H&M V1.0
  *
- * @package Posh Industries
- * @subpackage THEME NAME
- * @since VERSIONING
- */
+ **/
 ?>
-
-		<?php
-		/*if(is_active_sidebar('sidebar-footer')) {
-			dynamic_sidebar('sidebar-footer');
-		}*/
-		?>
 
 	</div> <!-- #wrapper -->
 	<?php wp_footer(); ?>
