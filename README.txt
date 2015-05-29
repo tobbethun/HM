@@ -1,3 +1,3 @@
-hej hej
+vi kör lite tid log här då!
 
-Jag är en förvirrad tjej som säger hej!
+29/5 Tobbe 1 timme (fixade featured image och sidebar)
