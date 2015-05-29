@@ -10,7 +10,14 @@
  **/
 ?>
 
-<?php get_header(); ?>
+<?php get_header();?>
+
+	<div class="sidebar">
+		<?php 
+		if(is_active_sidebar('sidebar-frontpage')) {
+				dynamic_sidebar('sidebar-frontpage');
+		}?>
+	</div>
 
 	<div class="content">
 		<div class="posts-content">
@@ -22,6 +29,9 @@
 						<h1><?php the_title(); ?></h1>
 						<?php
 						the_content();
+						if(has_post_thumbnail()) {
+								the_post_thumbnail('mobile-thumb');
+							}
 			?>
 			<div class="readmore">
         		<a href="<?php echo get_permalink(); ?>">Read more..</a>
