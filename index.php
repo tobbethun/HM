@@ -11,6 +11,13 @@
 ?>
 
 <?php get_header();?>
+	<div id="header">
+		<div class="top-nav">
+		</div>
+		<div class="main-top-nav">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/hm-logotype.png" alt="HM-Logo">
+		</div>
+	</div>
 
 	<div class="sidebar">
 		<?php 
@@ -18,7 +25,6 @@
 				dynamic_sidebar('sidebar-frontpage');
 		}?>
 	</div>
-
 	<div class="content">
 		<div class="posts-content">
 			<?php 
