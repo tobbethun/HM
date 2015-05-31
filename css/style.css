@@ -433,7 +433,7 @@ th {
 }
 
 @media screen and (min-width: 1400px) {
-  /* line 1, ../scss/_desktop.scss */
+  /* line 3, ../scss/_desktop.scss */
   .top-nav {
     width: 100%;
     height: 24px;
@@ -441,41 +441,58 @@ th {
     color: white;
   }
 
-  /* line 8, ../scss/_desktop.scss */
+  /* line 10, ../scss/_desktop.scss */
   .main-top-nav {
     width: 100%;
     height: 76px;
     box-shadow: 1px 1px 1px #888888;
   }
 
-  /* line 14, ../scss/_desktop.scss */
+  /* line 16, ../scss/_desktop.scss */
   .main-top-nav img {
     height: 45px;
     width: 68px;
     margin-left: 250px;
-    margin-top: 15.5px;
+    position: absolute;
   }
 
-  /* line 21, ../scss/_desktop.scss */
+  /* line 23, ../scss/_desktop.scss */
   .content {
     width: 972px;
-    height: 500px;
-    box-shadow: 1px 1px 1px 1px #888888;
+    height: auto;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #888888;
     margin: 0 auto;
   }
 
-  /* line 29, ../scss/_desktop.scss */
+  /* line 32, ../scss/_desktop.scss */
   .posts-content h1 {
     padding: 20px;
   }
 
-  /* line 33, ../scss/_desktop.scss */
+  /* line 36, ../scss/_desktop.scss */
   .posts-content p {
     padding: 20px;
   }
 
-  /* line 37, ../scss/_desktop.scss */
+  /* line 40, ../scss/_desktop.scss */
   .readmore a {
     padding: 20px;
+  }
+
+  /* line 46, ../scss/_desktop.scss */
+  .menu-menu-container {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  /* line 51, ../scss/_desktop.scss */
+  .menu {
+    list-style-type: none;
+    padding-top: 30px;
+  }
+
+  /* line 56, ../scss/_desktop.scss */
+  .menu li {
+    display: inline-block;
   }
 }

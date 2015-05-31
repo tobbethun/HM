@@ -1,3 +1,5 @@
+
+
 .top-nav {
 	width: 100%;
 	height: 24px;
@@ -15,13 +17,14 @@
 	height: 45px;
 	width: 68px;
 	margin-left: 250px;
-	margin-top: 15.5px;
+	position: absolute;
 }
 
 .content {
+
 	width: 972px;
-	height: 500px;
-	box-shadow: 1px 1px 1px 1px #888888;
+	height: auto;
+	box-shadow: 0.5px 0.5px 0.5px 0.5px #888888;
 	margin: 0 auto;
 
 }
@@ -37,4 +40,19 @@
 .readmore a {
 	padding: 20px;
 
+
+}
+
+.menu-menu-container {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.menu {
+	list-style-type: none;
+	padding-top: 30px;
+}
+
+.menu li {
+	display:inline-block;
 }
