@@ -10,3 +10,11 @@ vi kör lite tid log här då!
 
 	Fixade så att filtrering av kategorier sker med hjälp av isotope.
 
+1/6 Marcus 4h
+
+	Fixat så single posts laddas via ajax direkt i 
+
+	<div class="single-post-container"> här laddas single posts via ajax </div>
+
+	main.js och single.php hanterar detta. 
+

@@ -39,6 +39,7 @@
 		}?>
 	</div>
 	<div class="content">
+		<div class="single-post-container"></div>
 		<div class="posts-content">
 			<?php $the_query = new WP_Query( 'posts_per_page=50' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
 			<?php if ( $the_query->have_posts() ) : ?>
@@ -50,11 +51,12 @@
 					}
 				?> 
 				<div class="<?php echo $termsString; ?> item"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
-					<h3><?php the_title(); ?></h3>
+ 					<a class="post-link" rel="<?php the_ID(); ?>" href="<?php the_permalink(); ?>">
 	        		<?php if ( has_post_thumbnail() ) { 
                     	the_post_thumbnail("mobile-thumb");
                 		} 
                 	?>
+                	</a>
 				</div> <!-- end item -->
     			<?php endwhile;  ?>
 			<?php endif; ?>

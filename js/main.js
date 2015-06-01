@@ -1,3 +1,7 @@
+//Sets jquery in work
+
+var $ = jQuery;
+
 jQuery(function ($) {
  
 	var $container = $('.posts-content'); //The ID for the list with all the blog posts
@@ -28,3 +32,17 @@ jQuery(function ($) {
 	});
  
 });
+
+//Laddar single post inlägg direkt på första sidan via ajax.
+$(document).ready(function(){
+ 
+        $.ajaxSetup({cache:false});
+        $(".post-link").click(function(){
+            var post_link = $(this).attr("href");
+ 
+            $(".single-post-container").html("content loading");
+            $(".single-post-container").load(post_link);
+        return false;
+        });
+ 
+    });
