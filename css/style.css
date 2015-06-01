@@ -453,10 +453,11 @@ th {
     height: 45px;
     width: 68px;
     margin-left: 250px;
+    margin-top: 15.5px;
     position: absolute;
   }
 
-  /* line 23, ../scss/_desktop.scss */
+  /* line 24, ../scss/_desktop.scss */
   .content {
     width: 972px;
     height: auto;
@@ -464,35 +465,36 @@ th {
     margin: 0 auto;
   }
 
-  /* line 32, ../scss/_desktop.scss */
-  .posts-content h1 {
+  /* line 33, ../scss/_desktop.scss */
+  .posts-content {
+    margin-top: 30px;
+  }
+
+  /* line 37, ../scss/_desktop.scss */
+  .posts-content h3 {
     padding: 20px;
   }
 
-  /* line 36, ../scss/_desktop.scss */
+  /* line 41, ../scss/_desktop.scss */
   .posts-content p {
     padding: 20px;
   }
 
-  /* line 40, ../scss/_desktop.scss */
+  /* line 45, ../scss/_desktop.scss */
   .readmore a {
     padding: 20px;
   }
 
-  /* line 46, ../scss/_desktop.scss */
-  .menu-menu-container {
+  /* line 51, ../scss/_desktop.scss */
+  #filters {
+    list-style-type: none;
+    padding-top: 30px;
     width: 700px;
     margin: 0 auto;
   }
 
-  /* line 51, ../scss/_desktop.scss */
-  .menu {
-    list-style-type: none;
-    padding-top: 30px;
-  }
-
-  /* line 56, ../scss/_desktop.scss */
-  .menu li {
+  /* line 58, ../scss/_desktop.scss */
+  #filters li {
     display: inline-block;
   }
 }

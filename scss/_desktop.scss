@@ -17,6 +17,7 @@
 	height: 45px;
 	width: 68px;
 	margin-left: 250px;
+	margin-top: 15.5px;
 	position: absolute;
 }
 
@@ -29,7 +30,11 @@
 
 }
 
-.posts-content h1 {
+.posts-content {
+	margin-top: 30px;
+}
+
+.posts-content h3 {
 	padding: 20px;
 }
 
@@ -43,16 +48,13 @@
 
 }
 
-.menu-menu-container {
+#filters {
+	list-style-type: none;
+	padding-top: 30px;
 	width: 700px;
 	margin: 0 auto;
 }
 
-.menu {
-	list-style-type: none;
-	padding-top: 30px;
-}
-
-.menu li {
+#filters li {
 	display:inline-block;
 }

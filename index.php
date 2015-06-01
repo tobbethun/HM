@@ -16,7 +16,6 @@
 		</div>
 		<div class="main-top-nav">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/hm-logotype.png" alt="HM-Logo">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			<ul id="filters">
     			<li><a href="#" data-filter="*" class="selected">Everything</a></li>
 					<?php 
@@ -43,7 +42,6 @@
 		<div class="posts-content">
 			<?php $the_query = new WP_Query( 'posts_per_page=50' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
 			<?php if ( $the_query->have_posts() ) : ?>
-    		<div id="isotope-list">
     			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
 					$termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item
 					$termsString = ""; //initialize the string that will contain the terms
@@ -54,12 +52,11 @@
 				<div class="<?php echo $termsString; ?> item"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
 					<h3><?php the_title(); ?></h3>
 	        		<?php if ( has_post_thumbnail() ) { 
-                    	the_post_thumbnail();
+                    	the_post_thumbnail("mobile-thumb");
                 		} 
                 	?>
 				</div> <!-- end item -->
     			<?php endwhile;  ?>
-    		</div> <!-- end isotope-list -->
 			<?php endif; ?>
 		</div>
     </div>
