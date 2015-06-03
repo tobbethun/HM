@@ -34,7 +34,7 @@ jQuery(function ($) {
 });
 
 //Laddar single post inlägg direkt på första sidan via ajax.
-$(document).ready(function(){
+/*$(document).ready(function(){
  
         $.ajaxSetup({cache:false});
         $(".post-link").click(function(){
@@ -43,6 +43,22 @@ $(document).ready(function(){
             $(".single-post-container").html("content loading");
             $(".single-post-container").load(post_link);
         return false;
-        });
- 
     });
+});*/
+
+jQuery(function ($) {
+    $('.post-link').click(function(){
+        id = this.rel;
+        var post_link = $(this).attr("href");
+        $.get(post_link+id, function (resp) {
+            var data = $('<div id="ajax-popup"></div>').append(resp);
+            $( ".simplemodal-close" ).trigger( "click" );
+            // remove modal options if not needed
+            data.modal({
+                overlayCss:{backgroundColor:'#000'}, 
+                containerCss:{backgroundColor:'#fff', border:'1px solid #ccc'}
+            });
+        });
+        return false;
+    });
+});
