@@ -12,7 +12,7 @@ add_action( 'init', 'register_my_menus' );
 
 register_nav_menu( 'primary', __( 'Main Menu', 'Single Page Menu', 'hm' ) );
 
-register_sidebar(array( // gör så att sidebar för cpts funkar
+register_sidebar(array( // gör så att sidebar funkar
 	'id' => 'sidebar-frontpage',
 	'name' => __('Sidebar', 'hm'),
 	'desc' => 'Sidebar för index'

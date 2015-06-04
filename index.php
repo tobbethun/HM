@@ -16,20 +16,40 @@
 		</div>
 		<div class="main-top-nav">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/hm-logotype.png" alt="HM-Logo">
-			<ul id="filters">
-    			<li><a href="#" data-filter="*" class="selected">Everything</a></li>
-					<?php 
-						$terms = get_terms("category"); // get all categories, but you can use any taxonomy
-						$count = count($terms); //How many are they?
-							if ( $count > 0 ){  //If there are more than 0 terms
-							foreach ( $terms as $term ) {  //for each term:
-							echo "<li><a href='#' data-filter='.".$term->slug."'>" . $term->name . "</a></li>\n";
-							//create a list item with the current term slug for sorting, and name for label
-							}
-						} 
-					?>
-			</ul>
+			<div class="filters">
+				<div class="ui-group">
+					<h3>Typ	</h3>
+					<div class="button-group js-radio-button-group" data-filter-group="color">
+						<button class="button is-checked" data-filter="">Alla</button>
+						<button class="button" data-filter=".byxor">Byxor</button>
+						<button class="button" data-filter=".toppar">Toppar</button>
+						<button class="button" data-filter=".kjolar">Kjolar</button>
+					</div>
+				</div>
+
+				<div class="ui-group">
+					<h3>Storlek</h3>
+					<div class="button-group js-radio-button-group" data-filter-group="size">
+						<button class="button is-checked" data-filter="">Alla</button>
+						<button class="button" data-filter=".small">Small</button>
+						<button class="button" data-filter=".medium">Medium</button>
+						<button class="button" data-filter=".large">Large</button>
+					</div>
+				</div>
+
+				<div class="ui-group">
+					<h3>Färg</h3>
+					<div class="button-group js-radio-button-group" data-filter-group="shape">
+						<button class="button is-checked" data-filter="">Alla</button>
+						<button class="button" data-filter=".vit">Vit</button>
+						<button class="button" data-filter=".rod">Röd</button>
+						<button class="button" data-filter=".bla">Blå</button>
+						<button class="button" data-filter=".svart">Svart</button>
+					</div>
+				</div>
+			</div>
 		</div>
+
 	</div>
 
 	<div class="sidebar">
