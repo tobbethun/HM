@@ -18,3 +18,9 @@ vi kör lite tid log här då!
 
 	main.js och single.php hanterar detta. 
 
+3/6 Tobbe 1h
+	
+	Letat lösningar på hur man sorterar på flera variabler
+
+4/6 Tobbe 2h
+	Fixat så att isotope sorterar på flera kategorialternativ
