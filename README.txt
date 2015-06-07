@@ -24,3 +24,6 @@ vi kör lite tid log här då!
 
 4/6 Tobbe 2h
 	Fixat så att isotope sorterar på flera kategorialternativ
+
+7/6 Tobbe 3h
+	Fixat popup-fönster och stylat lite. La till en font i _typography

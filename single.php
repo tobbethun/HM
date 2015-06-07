@@ -18,7 +18,11 @@
  
     <?php while (have_posts()) : the_post(); ?>
  
-                <?php the_title();?>
+                <?php if ( has_post_thumbnail() ) { 
+                    	the_post_thumbnail("big");
+                		} 
+                	?>
+                <h1><?php the_title();?></h1>
  
                 <?php the_content();?>
  
