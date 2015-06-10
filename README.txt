@@ -27,3 +27,9 @@ vi kör lite tid log här då!
 
 7/6 Tobbe 3h
 	Fixat popup-fönster och stylat lite. La till en font i _typography
+
+9/6 Tobbe 2h
+	Stylat lite Fixat en metabox för pris
+
+10/6 Tobbe 3h
+	Stylat lite Fixat en till metabox denna för product text på första sidan.

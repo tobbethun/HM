@@ -76,6 +76,16 @@
                     	the_post_thumbnail("mobile-thumb");
                 		} 
                 	?>
+                	<div class="boxOnTop">
+                		<h3><?php the_title()?></h3>
+                		<p><?php
+                		$key_1_value = get_post_meta( get_the_ID(), 'text_meta_box', true );
+                		// check if the custom field has a value
+                		if( ! empty( $key_1_value ) ) {
+                			echo $key_1_value;
+                		} 
+                		?></p>
+                	</div>
                 	</a>
 				</div> <!-- end item -->
     			<?php endwhile;  ?>

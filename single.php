@@ -23,7 +23,15 @@
                 		} 
                 	?>
                 <h1><?php the_title();?></h1>
- 
+                <div class="pris">
+                <?php
+                $key_1_value = get_post_meta( get_the_ID(), 'about_meta_box', true );
+                // check if the custom field has a value
+                if( ! empty( $key_1_value ) ) {
+                  echo $key_1_value;
+                } 
+                ?>
+                </div>
                 <?php the_content();?>
  
     <?php endwhile;?> 

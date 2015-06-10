@@ -113,3 +113,24 @@ body {
   display: inline-block;
   margin-right: 1%;
 }
+.boxOnTop {
+	background-color: white;
+	color: black;
+	opacity: 0.6;
+	position: absolute;
+	margin-top: -65%;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	h3 {
+		padding: 0;
+		padding-left: 5%;
+		margin: 3%;
+	}
+	p {
+		padding-left: 45%;
+	}
+}
+.boxOnTop:hover {
+	opacity: .9;
+}
