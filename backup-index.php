@@ -1,17 +1,4 @@
-<?php
-/**
- * The index template
- *
- * @author Grupp Delta
- * @package Grupp Delta H&M projekt
- * @subpackage H&M
- * @since H&M V1.0
- *
- **/
-?>
-
-<?php get_header();?>
-	<div id="header">
+<div id="header">
 		<div class="top-nav">
 		</div>
 		<div class="main-top-nav">
@@ -92,5 +79,3 @@
 			<?php endif; ?>
 		</div>
     </div>
-
-<?php get_footer(); ?>
