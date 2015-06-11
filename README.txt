@@ -33,3 +33,7 @@ vi kör lite tid log här då!
 
 10/6 Tobbe 3h
 	Stylat lite Fixat en till metabox denna för product text på första sidan.
+
+11/6 Marcus 2h
+
+	fixat nya element på startsidan och trixat med positionering i css. 
