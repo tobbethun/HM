@@ -12,11 +12,11 @@
 
 <?php get_header();?>
 
-	<div class="ladies">Hello</div>
-	<div class="main-content">
-		<div class="top">hola</div>
-		<div class="bottom">Senior</div>
+	<div class="top-left">
+		<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/dude.jpeg" alt="dude"></a>
 	</div>
-	<div class="gentlemen">Word!</div>
+	<div class="bottom-right">
+		<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/old-lady.png" alt="old-lady"></a>
+	</div>
 
 <?php get_footer(); ?>
