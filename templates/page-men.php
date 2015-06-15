@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Women page
+ * Template Name: Men page
  *
  * Selectable from a dropdown menu on the edit page screen.
  */
@@ -60,7 +60,7 @@ get_header();
 		<div class="posts-content">
 			<?php
 				$args=array(
-		      	'tag' => 'woman',
+		      	'tag' => 'men',
 		      	'showposts'=>50,
 		      	'caller_get_posts'=>1
 		    	);

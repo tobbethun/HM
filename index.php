@@ -13,10 +13,10 @@
 <?php get_header();?>
 
 	<div class="top-left">
-		<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/dude.jpeg" alt="dude"></a>
+		<a href="index.php?page_id=42"><img src="<?php echo get_template_directory_uri(); ?>/img/dude.jpeg" alt="dude"></a>
 	</div>
 	<div class="bottom-right">
-		<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/old-lady.png" alt="old-lady"></a>
+		<a href="index.php?page_id=40"><img src="<?php echo get_template_directory_uri(); ?>/img/old-lady.png" alt="old-lady"></a>
 	</div>
 
 <?php get_footer(); ?>
