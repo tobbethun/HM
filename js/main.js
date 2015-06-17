@@ -19,13 +19,23 @@ $(document).ready(function(){
             modalColor: 'black'
             });
 		return false;
+
 	});
 
+  $(".gallery-icon a").click(function(){
+    var post_link = $(this).attr("href");
+    console.log(post_link);
+    $('.attachment-big').attr('src', post_link);
+
+
+    return false;
+
+  });
 
   // init Isotope
   var $grid = $('.posts-content').isotope({
   	itemSelector: '.item', 
-  	layoutMode : 'masonry'
+  	layoutMode : 'horizontal'
   });
 
   // store filter for each group
@@ -66,21 +76,4 @@ function concatValues( obj ) {
 	return value;
 }
 
-
-// jQuery(function ($) {
-//     $('.post-link').click(function(){
-//         id = this.rel;
-//         var post_link = $(this).attr("href");
-//         $.get(post_link+id, function (resp) {
-//             var data = $('<div id="ajax-popup"></div>').append(resp);
-//             $( ".simplemodal-close" ).trigger( "click" );
-//             // remove modal options if not needed
-//             data.modal({
-//                 overlayCss:{backgroundColor:'#000'}, 
-//                 containerCss:{backgroundColor:'#fff', border:'1px solid #ccc'}
-//             });
-//         });
-//         return false;
-//     });
-// });
 

@@ -37,3 +37,11 @@ vi kör lite tid log här då!
 11/6 Marcus 2h
 
 	fixat nya element på startsidan och trixat med positionering i css. 
+
+15/6 Tobbe 4h
+
+	Jobbat med horizontal scroll och länkar från front-page
+
+16/6 Tobbe 6h
+	
+	Fixat med single.php m.m

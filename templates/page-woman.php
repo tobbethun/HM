@@ -10,7 +10,7 @@ get_header();
 <div id="header">
 		<div class="top-nav">
 		</div>
-		<i class="fa fa-gamepad"></i>
+		
 		<div class="main-top-nav">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/hm-logotype.png" alt="HM-Logo">
 			<div class="filters">
@@ -74,10 +74,10 @@ get_header();
 						$termsString .= $term->slug.' '; //create a string that has all the slugs 
 					}
 				?> 
-				<div class="<?php echo $termsString; ?> item"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
+				<div class="post-box <?php echo $termsString; ?> item"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
  					<a class="post-link" rel="<?php the_ID(); ?>" href="<?php the_permalink(); ?>">
 	        		<?php if ( has_post_thumbnail() ) { 
-                    	the_post_thumbnail("mobile-thumb");
+                    	the_post_thumbnail("spel");
                 		} 
                 	?>
                 	<div class="boxOnTop">
